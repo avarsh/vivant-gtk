@@ -1,5 +1,7 @@
 # Vivant GTK-3 Theme (in development) 
 
+![Vivant GTK Screenshot](https://user-images.githubusercontent.com/25088746/40657505-0afed1ce-6340-11e8-9265-df4c03343b31.png)
+
 ## Introduction
 Vivant is a clean, modern GTK-3 theme for the Gnome desktop. Basically has no support for anything except GTK-3 (and even the dark version doesn't exist yet).
 Tested on GTK 3.28, but might work for earlier versions.
