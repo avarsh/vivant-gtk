@@ -25,8 +25,8 @@ $darker_asset_suffix: if($darker=='true', '-dark', $asset_suffix);
   // We use the outline properties to signal the focus properties
   outline-color: gtkalpha(currentColor, 0.3);
   outline-style: dashed;
-  outline-offset: -3px;
-  outline-width: 1px;
+  outline-offset: -1px;
+  outline-width: 0;
   -gtk-outline-radius: 2px;
 }
 
@@ -141,7 +141,6 @@ assistant {
     border-top: 1px solid $borders_color;
   }
 
-  &.csd .sidebar { border-top-style: none; }
 
   .sidebar label { padding: 6px 12px; }
 
@@ -983,12 +982,15 @@ headerbar,
   border-style: solid;
   border-color: opacify($header_border, 1);
 
-  color: $header_fg;
+  color: lighten($header_fg, 5%);
   background-color: opacify($header_bg, 1);
-  box-shadow: inset 0  1px lighten($header_bg, 3%);
-
+  box-shadow: inset 0 1px lighten($header_bg, 3%);
+  
   .csd & {  // Transparent header-bars only in csd windows
-    background-color: $header_bg;
+    background-color: transparentize($header_bg, 1.0);
+    background-image: linear-gradient(to bottom,
+                                $header_bg,
+                                darken($header_bg, 2%));
     border-color: $header_border;
   }
 
@@ -1004,6 +1006,7 @@ headerbar,
   .title {
     padding-left: 12px;
     padding-right: 12px;
+    font-weight: bold;
   }
 
   .subtitle {
@@ -1741,7 +1744,8 @@ notebook {
   padding: 0;
 
   &.frame {
-    border: 1px solid $borders_color;
+    /*border: 1px solid $borders_color;*/
+    border: none;
 
     > header {
       // ugly hack to hide the borders around the header
@@ -1761,13 +1765,14 @@ notebook {
   }
 
   > header {
-    padding: 2px;
-    background-color: $bg_color;
+    padding: 5px;
+    background-color: darken($bg_color, 10%);
+    background-image: linear-gradient(to bottom, darken($bg_color, 12%) 0%, darken($bg_color, 7%) 35%);
 
-    &.top {    box-shadow: inset  0  -1px $borders_color; }
+    /*&.top {    box-shadow: inset  0  -1px $borders_color; }
     &.bottom { box-shadow: inset  0   1px $borders_color; }
     &.right {  box-shadow: inset  1px 0   $borders_color; }
-    &.left {   box-shadow: inset -1px 0   $borders_color; }
+    &.left {   box-shadow: inset -1px 0   $borders_color; }*/
 
   @each $_pos, $_bpos in (top, bottom), (bottom, top), (right, left), (left, right) {
       // sizing and borders
@@ -1781,7 +1786,7 @@ notebook {
 
           outline-offset: -4px;
 
-          border: 1px solid transparent;
+          //border: 1px solid transparent;
           border-#{$_bpos}: none;
 
           // tab overlap
@@ -1791,10 +1796,10 @@ notebook {
           }
 
           // tab border radius
-          @if $_pos==top { border-radius: 1px 1px 0 0; }
-          @else if $_pos==bottom { border-radius: 0 0 1px 1px; }
-          @else if $_pos==left { border-radius: 1px 0 0 1px; }
-          @else if $_pos==right { border-radius: 0 1px 1px 0; }
+          @if $_pos==top { border-radius: 3px 3px 0 0; }
+          @else if $_pos==bottom { border-radius: 0 0 3px 3px; }
+          @else if $_pos==left { border-radius: 3px 0 0 3px; }
+          @else if $_pos==right { border-radius: 0 3px 3px 0; }
         }
       }
     }
@@ -1829,10 +1834,10 @@ notebook {
 
     // tab colors
 
-    &.top > tabs > tab:hover:not(:checked) { box-shadow: inset 0 -1px $borders_color; }
+    /*&.top > tabs > tab:hover:not(:checked) { box-shadow: inset 0 -1px $borders_color; }
     &.bottom > tabs > tab:hover:not(:checked) { box-shadow: inset 0 1px $borders_color; }
     &.left > tabs > tab:hover:not(:checked) { box-shadow: inset -1px 0 $borders_color; }
-    &.right > tabs > tab:hover:not(:checked) { box-shadow: inset 1px 0 $borders_color; }
+    &.right > tabs > tab:hover:not(:checked) { box-shadow: inset 1px 0 $borders_color; }*/
 
     > tabs > tab {
       color: $insensitive_fg_color;
@@ -1842,6 +1847,7 @@ notebook {
         color: mix($fg_color, $insensitive_fg_color, 50%);
         background-color: transparentize($base_color, 0.5);
         border-color: $borders_color;
+        border-radius: 0;
       }
       &:checked {
         color: $fg_color;

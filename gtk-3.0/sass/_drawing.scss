@@ -132,7 +132,7 @@
   // hovered button
   //
     color: $fg_color;
-    border-color: $button_border;
+    border-color: darken($button_border, 10%);
     background-color: lighten($button_bg, 10%);
     box-shadow: 0 4px 6px -8px transparentize(black, 0.5);
   }
@@ -188,7 +188,7 @@
     border-color: $header_button_border;
     background-color: $header_button_bg;
 
-    box-shadow: 0 1px 1px transparentize(black, 0.9);
+  //  box-shadow: 0 1px 1px transparentize(black, 0.9);
   }
 
   @else if $t==header-active {
