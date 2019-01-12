@@ -4,6 +4,10 @@ To edit the GTK-3.0 code, edit only the files contained in the SASS folder. Then
 
 `# npm install -g gulp`
 
+May also need to locally install:
+
+`# npm install gulp-sass gulp-rename`
+
 And run
 
 `$ gulp`

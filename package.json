@@ -4,7 +4,9 @@
   "description": "A clean, modern gtk-3.0 theme.",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
   },
   "devDependencies": {},
   "scripts": {

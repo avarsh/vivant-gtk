@@ -2,7 +2,7 @@ var gulp        = require("gulp");
 var sass        = require("gulp-sass");
 var rename      = require('gulp-rename');
 
-gulp.task('sass', function () {
+gulp.task('sass', gulp.series(function () {
     return gulp.src(['./**/sass/*.scss', '!./node_modules/**/*', '!./m4/**/*'])
         .pipe(sass({
             outputStyle: 'nested',
@@ -15,6 +15,6 @@ gulp.task('sass', function () {
             path.dirname += "/../";
         }))
         .pipe(gulp.dest('./'))
-});
+}));
 
-gulp.task('default', ['sass']);
+gulp.task('default', gulp.series('sass'));
