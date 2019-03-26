@@ -27,6 +27,11 @@ filechooser,
     row.sidebar-row {
       border: none;
       color: $dark_sidebar_fg;
+      margin: 2px;
+      margin-left: 10px;
+      margin-right: 10px;
+      border-radius: 6px;
+      padding: 4px;
 
       .sidebar-icon { color: transparentize($dark_sidebar_fg, 0.4); }
 
@@ -40,6 +45,8 @@ filechooser,
       &:selected.has-open-popup,
       &:selected, &:selected:hover, &:active:hover {
         @extend %selected_items;
+        background-image: linear-gradient(to bottom right, lighten($selected_bg_color, 3%), 
+                                        darken($selected_bg_color, 4%));
 
         .sidebar-icon { color: inherit; }
       }
