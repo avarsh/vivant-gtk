@@ -990,7 +990,7 @@ headerbar,
     background-color: transparentize($header_bg, 1.0);
     background-image: linear-gradient(to bottom,
                                 $header_bg,
-                                darken($header_bg, 2%));
+                                $header_bg);
     border-color: $header_border;
   }
 

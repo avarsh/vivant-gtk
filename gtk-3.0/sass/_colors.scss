@@ -36,7 +36,7 @@ $insensitive_fg_color: if($variant == 'light', transparentize($fg_color, 0.45), 
 $insensitive_bg_color: if($variant == 'light', mix($bg_color, $base_color, 40%), lighten($bg_color, 2%));
 
 $header_bg: red;
-@if $transparency=='true' and $variant=='light' { $header_bg: transparentize(#fafbfc, 0.05); }
+@if $transparency=='true' and $variant=='light' { $header_bg: transparentize(#DEDCE8, 0.05); }
 @if $transparency=='false' and $variant=='light' { $header_bg: #fafbfc; }
 @if $transparency=='true' and ($variant=='dark' or $darker=='true') { $header_bg: transparentize(#0F1419, 0.03); }
 @if $transparency=='false' and ($variant=='dark' or $darker=='true') { $header_bg: #2f343f; }

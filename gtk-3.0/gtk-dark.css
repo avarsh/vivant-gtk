@@ -958,7 +958,7 @@ headerbar,
   box-shadow: inset 0 1px rgba(21, 28, 35, 0.97); }
   .csd headerbar, .csd .titlebar:not(headerbar) {
     background-color: rgba(15, 20, 25, 0);
-    background-image: linear-gradient(to bottom, rgba(15, 20, 25, 0.97), rgba(11, 15, 19, 0.97));
+    background-image: linear-gradient(to bottom, rgba(15, 20, 25, 0.97), rgba(15, 20, 25, 0.97));
     border-color: rgba(0, 0, 0, 0.97); }
   headerbar:backdrop,
   .titlebar:backdrop:not(headerbar) {
