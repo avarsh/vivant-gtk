@@ -1121,6 +1121,7 @@ window.csd > .titlebar:not(headerbar):backdrop {
   color: rgba(207, 218, 231, 0.8);
   outline-offset: -3px;
   background-color: rgba(47, 52, 63, 0);
+  border: none;
   border-color: rgba(47, 52, 63, 0);
   box-shadow: none; }
   .primary-toolbar button:backdrop, headerbar button:backdrop {

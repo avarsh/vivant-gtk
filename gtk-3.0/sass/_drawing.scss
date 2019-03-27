@@ -176,6 +176,7 @@
     color: $header_fg;
     outline-offset: -3px;
     background-color: transparentize($header_bg, 1);
+    border: none;
     border-color: transparentize($header_bg, 1);
     box-shadow: none;
   }
@@ -188,8 +189,6 @@
     color: $header_fg;
     border-color: $header_button_border;
     background-color: $header_button_bg;
-
-  //  box-shadow: 0 1px 1px transparentize(black, 0.9);
   }
 
   @else if $t==header-active {
