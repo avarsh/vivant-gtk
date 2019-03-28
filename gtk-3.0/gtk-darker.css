@@ -747,15 +747,17 @@ modelbutton.flat, button:link, button:visited, button:link:hover, button:link:ac
 
 menuitem.button.flat,
 modelbutton.flat {
-  transition: none;
+  transition: 75ms ease-in;
   min-height: 24px;
+  padding: 4px;
   padding-left: 8px;
   padding-right: 8px;
   outline-offset: -3px;
-  border-radius: 2px; }
+  border-radius: 3px; }
   menuitem.button.flat:hover,
   modelbutton.flat:hover {
-    background-color: #ececed; }
+    background-color: #3e74ff;
+    color: white; }
   menuitem.button.flat:checked,
   modelbutton.flat:checked {
     color: #161c26; }

@@ -726,16 +726,20 @@ toolbar.inline-toolbar toolbutton {
 // menu buttons
 menuitem.button.flat,
 modelbutton.flat {
-  transition: none;
+  transition: 75ms ease-in;
   min-height: 24px;
+  padding: 4px;
   padding-left: 8px;
   padding-right: 8px;
   outline-offset: -3px;
-  border-radius: 2px;
+  border-radius: 3px;
 
   @extend %undecorated_button;
 
-  &:hover { background-color: if($variant=='light', mix($fg_color,$bg_color,5%), mix($fg_color,$bg_color,10%)); }
+  &:hover { 
+    background-color: if($variant=='light', mix($selected_bg_color,$bg_color,95%), mix($fg_color,$bg_color,10%));
+    color: white;
+  }
   &:active, &:selected { &, arrow { @extend %selected_items; } }
   &:checked { color: $fg_color; }
 
