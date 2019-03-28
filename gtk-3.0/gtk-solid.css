@@ -84,7 +84,7 @@ popover.background label.separator, headerbar .subtitle,
 
 assistant .sidebar {
   background-color: #ffffff;
-  border-top: 1px solid #e0e0e0; }
+  border-top: 1px solid #dedede; }
 
 assistant .sidebar label {
   padding: 6px 12px; }
@@ -930,7 +930,7 @@ toolbar, .inline-toolbar {
 .inline-toolbar {
   background-color: #efefef;
   border-style: solid;
-  border-color: #e0e0e0;
+  border-color: #dedede;
   border-width: 0 1px 1px;
   padding: 3px;
   border-radius: 0  0 3px 3px; }
@@ -938,13 +938,13 @@ toolbar, .inline-toolbar {
 searchbar {
   background-color: #f7f7f7;
   border-style: solid;
-  border-color: #e0e0e0;
+  border-color: #dedede;
   border-width: 0 0 1px;
   padding: 3px; }
 
 actionbar {
   padding: 6px;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #dedede;
   background-color: #efefef; }
 
 headerbar,
@@ -1611,7 +1611,7 @@ menu,
   padding: 0;
   border-radius: 0;
   background-color: #ffffff;
-  border: 1px solid #e0e0e0; }
+  border: 1px solid #dedede; }
   .csd menu, .csd
   .menu {
     padding: 4px 0px;
@@ -1705,7 +1705,7 @@ popover.background {
   .csd popover, popover, .csd
   popover.background,
   popover.background {
-    border: 1px solid lightgray; }
+    border: 1px solid #d1d1d1; }
   popover separator,
   popover.background separator {
     background-color: #ffffff; }
@@ -1841,12 +1841,12 @@ notebook {
       notebook > header > tabs > tab:hover:not(:checked) {
         color: rgba(22, 28, 38, 0.775);
         background-color: rgba(255, 255, 255, 0.5);
-        border-color: #e0e0e0;
+        border-color: #dedede;
         border-radius: 0; }
       notebook > header > tabs > tab:checked {
         color: #161c26;
         background-color: #ffffff;
-        border-color: #e0e0e0; }
+        border-color: #dedede; }
       notebook > header > tabs > tab button.flat, notebook > header > tabs > tab button.sidebar-button {
         min-height: 22px;
         min-width: 16px;
@@ -1864,13 +1864,13 @@ scrollbar {
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false; }
   scrollbar.top {
-    border-bottom: 1px solid #e0e0e0; }
+    border-bottom: 1px solid #dedede; }
   scrollbar.bottom {
-    border-top: 1px solid #e0e0e0; }
+    border-top: 1px solid #dedede; }
   scrollbar.left {
-    border-right: 1px solid #e0e0e0; }
+    border-right: 1px solid #dedede; }
   scrollbar.right {
-    border-left: 1px solid #e0e0e0; }
+    border-left: 1px solid #dedede; }
   scrollbar button {
     border: none; }
   scrollbar.vertical button.down {
@@ -2439,7 +2439,7 @@ levelbar block.empty {
   border-color: rgba(22, 28, 38, 0.2); }
 
 printdialog paper {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #dedede;
   background: #ffffff;
   padding: 0; }
 
@@ -2451,7 +2451,7 @@ frame > border,
   margin: 0;
   padding: 0;
   border-radius: 0;
-  border: 1px solid #e0e0e0; }
+  border: 1px solid #dedede; }
 
 frame.flat > border,
 frame > border.flat,
@@ -2539,7 +2539,7 @@ scrolledwindow undershoot.right {
 
 scrolledwindow junction {
   border-color: transparent;
-  border-image: linear-gradient(to bottom, #e0e0e0 1px, transparent 1px) 0 0 0 1/0 1px stretch;
+  border-image: linear-gradient(to bottom, #dedede 1px, transparent 1px) 0 0 0 1/0 1px stretch;
   background-color: #fcfcfc; }
   scrolledwindow junction:dir(rtl) {
     border-image-slice: 0 1 0 0; }
@@ -2551,7 +2551,7 @@ separator {
 
 list {
   background-color: #ffffff;
-  border-color: #e0e0e0; }
+  border-color: #dedede; }
   list row {
     padding: 2px; }
 
@@ -2619,7 +2619,7 @@ expander arrow {
 
 calendar {
   color: #161c26;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #dedede;
   border-radius: 3px;
   padding: 2px; }
   calendar:selected {
@@ -2673,7 +2673,7 @@ messagedialog.csd .dialog-action-area button:only-child {
   border-right-style: none; }
 
 filechooser #pathbarbox {
-  border-bottom: 1px solid rgba(224, 224, 224, 0.5); }
+  border-bottom: 1px solid rgba(222, 222, 222, 0.5); }
 
 filechooserbutton:drop(active) {
   box-shadow: none;
@@ -2685,11 +2685,11 @@ filechooserbutton:drop(active) {
   stacksidebar.sidebar:dir(ltr) list,
   stacksidebar.sidebar.left list,
   stacksidebar.sidebar.left:dir(rtl) list, .sidebar:dir(ltr), .sidebar.left, .sidebar.left:dir(rtl) {
-    border-right: 1px solid #e0e0e0;
+    border-right: 1px solid #dedede;
     border-left-style: none; }
   stacksidebar.sidebar:dir(rtl) list,
   stacksidebar.sidebar.right list, .sidebar:dir(rtl), .sidebar.right {
-    border-left: 1px solid #e0e0e0;
+    border-left: 1px solid #dedede;
     border-right-style: none; }
   .sidebar list {
     background-color: transparent; }
@@ -2767,7 +2767,7 @@ paned > separator {
   -gtk-icon-source: none;
   border-style: none;
   background-color: transparent;
-  background-image: linear-gradient(to bottom, #e0e0e0, #e0e0e0);
+  background-image: linear-gradient(to bottom, #dedede, #dedede);
   background-size: 1px 1px; }
   paned > separator:selected {
     background-image: linear-gradient(to bottom, #346dff, #346dff); }
@@ -2775,7 +2775,7 @@ paned > separator {
     min-width: 5px;
     min-height: 5px;
     background-color: #f7f7f7;
-    background-image: linear-gradient(to bottom, #e0e0e0, #e0e0e0), linear-gradient(to bottom, #e0e0e0, #e0e0e0);
+    background-image: linear-gradient(to bottom, #dedede, #dedede), linear-gradient(to bottom, #dedede, #dedede);
     background-size: 1px 1px, 1px 1px; }
 
 paned.horizontal > separator {
@@ -2979,7 +2979,7 @@ button.circular-button {
   padding: 3px 6px 4px 6px;
   color: #161c26;
   background-color: #ffffff;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #dedede;
   border-radius: 2.5px;
   box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.05); }
 
@@ -3151,12 +3151,12 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
 
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
-  box-shadow: inset 0 -1px #e0e0e0; }
+  box-shadow: inset 0 -1px #dedede; }
 
 terminal-window notebook > header.top,
 .mate-terminal notebook > header.top {
   padding-top: 3px;
-  box-shadow: inset 0 1px #dae2e9, inset 0 -1px #e0e0e0; }
+  box-shadow: inset 0 1px #dae2e9, inset 0 -1px #dedede; }
   terminal-window notebook > header.top button,
   .mate-terminal notebook > header.top button {
     padding: 0;
@@ -3188,7 +3188,7 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
     color: #d6e2ff; }
 
 .nautilus-window searchbar {
-  border-top: 1px solid #e0e0e0; }
+  border-top: 1px solid #dedede; }
 
 .nautilus-window .searchbar-container {
   margin-top: -1px; }
@@ -3279,7 +3279,7 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
   box-shadow: inset 1px 0 rgba(19, 27, 41, 0.1); }
 
 .caja-notebook {
-  border-top: 1px solid #e0e0e0; }
+  border-top: 1px solid #dedede; }
 
 .caja-side-pane .frame {
   border-width: 1px 0 0; }
@@ -3332,18 +3332,18 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
     color: #ffffff; }
 
 .gedit-document-panel-dragged-row {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #dedede;
   background-color: #dedede;
   color: #161c26; }
 
 .gedit-side-panel-paned statusbar {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #dedede;
   background-color: #f7f7f7; }
 
 .gedit-search-slider {
   background-color: #fcfcfc;
   padding: 6px;
-  border-color: #e0e0e0;
+  border-color: #dedede;
   border-radius: 0 0 2px 2px;
   border-width: 0 1px 1px 1px;
   border-style: solid; }
@@ -3393,11 +3393,11 @@ layouttab {
   background-color: #ffffff; }
 
 layout {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #dedede;
   -PnlDockBin-handle-size: 1; }
 
 eggsearchbar box.search-bar {
-  border-bottom: 1px solid #e0e0e0; }
+  border-bottom: 1px solid #dedede; }
 
 pillbox {
   color: #ffffff;
@@ -3409,7 +3409,7 @@ pillbox {
 docktabstrip {
   padding: 0 6px;
   background-color: #f7f7f7;
-  border-bottom: 1px solid #e0e0e0; }
+  border-bottom: 1px solid #dedede; }
   docktabstrip docktab {
     min-height: 28px;
     border: solid transparent;
@@ -3419,15 +3419,15 @@ docktabstrip {
     docktabstrip docktab:checked label, docktabstrip docktab:hover label {
       opacity: 1; }
     docktabstrip docktab:checked {
-      border-color: #e0e0e0;
+      border-color: #dedede;
       background-color: #ffffff; }
 
 dockbin {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #dedede;
   -PnlDockBin-handle-size: 1; }
 
 dockpaned {
-  border: 1px solid #e0e0e0; }
+  border: 1px solid #dedede; }
 
 dockoverlayedge {
   background-color: #f7f7f7; }
@@ -3459,8 +3459,8 @@ popover.popover-selector {
 
 entry.search.preferences-search {
   border: none;
-  border-right: 1px solid #e0e0e0;
-  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
   border-radius: 0; }
 
 preferences stacksidebar.sidebar list {
@@ -3471,7 +3471,7 @@ preferences stacksidebar.sidebar list separator {
 
 devhelppanel entry:focus,
 symboltreepanel entry:focus {
-  border-color: #e0e0e0; }
+  border-color: #dedede; }
 
 button.run-arrow-button {
   min-width: 12px; }
@@ -3925,8 +3925,8 @@ GraniteWidgetsThinPaned {
   background-color: transparent;
   background-image: none;
   margin: 0;
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0; }
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede; }
 
 GraniteWidgetsPopOver .frame,
 GraniteWidgetsStaticNotebook .frame {
@@ -3938,7 +3938,7 @@ GraniteWidgetsStaticNotebook .frame {
 
 toolbar.secondary-toolbar, .secondary-toolbar.inline-toolbar {
   padding: 3px;
-  border-bottom: 1px solid #e0e0e0; }
+  border-bottom: 1px solid #dedede; }
   toolbar.secondary-toolbar button, .secondary-toolbar.inline-toolbar button {
     padding: 0 3px 0 3px; }
 
@@ -3946,7 +3946,7 @@ toolbar.bottom-toolbar, .bottom-toolbar.inline-toolbar {
   padding: 5px;
   border-width: 1px 0 0 0;
   border-style: solid;
-  border-color: #e0e0e0;
+  border-color: #dedede;
   background-color: #f7f7f7; }
   toolbar.bottom-toolbar button, .bottom-toolbar.inline-toolbar button {
     padding: 2px 3px 2px 3px; }
@@ -4341,7 +4341,7 @@ filechooser actionbar {
   background-image: linear-gradient(to bottom, #1a1a1a, #1a1a1a); }
 
 .gedit-bottom-panel-paned > separator {
-  background-image: linear-gradient(to bottom, #e0e0e0, #e0e0e0); }
+  background-image: linear-gradient(to bottom, #dedede, #dedede); }
 
 .gedit-document-panel {
   background-color: #1a1a1a; }
@@ -4430,8 +4430,8 @@ filechooser placessidebar.sidebar scrollbar,
 @define-color theme_unfocused_text_color #161c26;
 @define-color theme_unfocused_bg_color #f7f7f7;
 @define-color theme_unfocused_base_color #ffffff;
-@define-color borders #e0e0e0;
-@define-color unfocused_borders #e0e0e0;
+@define-color borders #dedede;
+@define-color unfocused_borders #dedede;
 @define-color warning_color #F27835;
 @define-color error_color #FC4138;
 @define-color success_color #0ec45c;

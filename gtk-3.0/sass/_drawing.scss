@@ -133,7 +133,7 @@
   // hovered button
   //
     color: $fg_color;
-    border-color: darken($button_border, 10%);
+    border-color: if($variant == 'light', darken($button_border, 10%), darken($button_border, 0%));
     background-color: lighten($button_bg, 10%);
     box-shadow: 0 4px 6px -8px transparentize(black, 0.5);
   }

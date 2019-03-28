@@ -2,15 +2,15 @@
 // it gets @if ed depending on $variant
 
 
-$base_color: if($variant =='light', #ffffff,#1F2022);
+$base_color: if($variant =='light', #ffffff,#1D1E20);
 $text_color: if($variant == 'light', #161c26, #D3DAE3);
-$bg_color: if($variant =='light', #f7f7f7, #1F2022);
+$bg_color: if($variant =='light', #f7f7f7,#2B2C2E);
 $fg_color: if($variant =='light', #161c26, #D3DAE3);
 
 $selected_fg_color: #ffffff;
 $selected_bg_color: mix(#4A67FF, #007aff, 70%); //#007aff;
 $selected_borders_color: darken($selected_bg_color, 20%);
-$borders_color: if($variant =='light', darken($bg_color,9%), darken($bg_color,6%));
+$borders_color: if($variant =='light', darken($bg_color,10%), darken($bg_color, 4%));
 
 $link_color: if($variant == 'light', darken($selected_bg_color,10%),
                                      lighten($selected_bg_color,20%));
@@ -48,7 +48,9 @@ $header_border: if($variant == 'light' and $darker=='false', darken($header_bg, 
 $header_fg: if($variant == 'light', saturate(transparentize($fg_color, 0.2), 10%), saturate(transparentize($fg_color, 0.2), 10%));
 $header_fg: if($darker == 'true', saturate(transparentize(#D3DAE3, 0.2), 10%), $header_fg);
 
-$dark_sidebar_bg: if($transparency == 'true', transparentize(#0F1419, 0.06), #1a1a1a);
+$base_darker: darken($base_color, 5%);
+$dark_sidebar_bg: if($variant == 'light', if($transparency == 'true', transparentize(#0F1419, 0.06), #1a1a1a),
+                    if($transparency == 'true', transparentize($base_darker, 0.06), $base_darker));
 $dark_sidebar_fg: #ffffff;
 $dark_sidebar_border: if($variant == 'light', $dark_sidebar_bg, darken($dark_sidebar_bg, 5%));
 
