@@ -648,16 +648,17 @@ toolbar.inline-toolbar toolbutton {
 }
 
 // special case, because path-bars are bugged
-@mixin pathbar_linking_rules($sep_color:if($variant=='light', transparentize($button_border, 0.6), transparentize($button_border, 0.5))) {
+@mixin pathbar_linking_rules($sep_color:if($variant=='light', transparentize($button_border, 0.2), transparentize($button_border, 0.5))) {
 
   > button + button { border-left-style: none; }
 
   > button:hover:not(:checked):not(:active):not(:only-child) {
 
     &:hover {
+      transition: 75ms linear;
+      background-color: lighten($bg_color, 5%);
       box-shadow: inset  1px 0 $sep_color,
-                  inset -1px 0 $sep_color,
-                  0 1px 0 transparentize(black, 0.85);
+                  inset -1px 0 $sep_color;
     }
     &:first-child:hover { box-shadow: inset -1px 0 $sep_color; }
     &:last-child:hover { box-shadow: inset 1px 0 $sep_color; }
@@ -857,6 +858,8 @@ spinbutton {
 //
 combobox {
   button.combo {
+    @include button(combo);
+
     min-width: 0;       // otherwise the arrow placement is unsymmetric
     padding-left: 8px;  //
     padding-right: 8px  //
@@ -1408,6 +1411,7 @@ headerbar {
 // Pathbars
 //
 .path-bar button {
+
   &.text-button, &.image-button, & {
     padding-left: 6px;
     padding-right: 6px;
@@ -2863,6 +2867,8 @@ infobar {
 // Buttons on selected backgrounds
 //
 %selected-button {
+
+  padding: 5px;
 
   @at-root %normal_selected_button, & {
     color: $selected_fg_color;

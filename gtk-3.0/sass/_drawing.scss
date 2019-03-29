@@ -126,6 +126,8 @@
     border-color: $button_border;
     background-color: $button_bg;
     box-shadow: 0 4px 6px -8px transparentize(black, 0.8);
+    padding: 5px;
+    border-radius: 4px;
   }
 
   @else if $t==hover {
@@ -133,9 +135,9 @@
   // hovered button
   //
     color: $fg_color;
-    border-color: if($variant == 'light', darken($button_border, 10%), darken($button_border, 0%));
+    border-color: if($variant == 'light', darken($button_border, 5%), darken($button_border, 0%));
     background-color: lighten($button_bg, 10%);
-    box-shadow: 0 4px 6px -8px transparentize(black, 0.5);
+    box-shadow: 0 4px 6px -8px transparentize(black, 0.4);
   }
 
   @else if $t==active {
@@ -275,6 +277,10 @@
     background-color: transparent;
     background-image: none;
     box-shadow: none;
+  }
+
+  @else if $t==combo {
+    
   }
 }
 
