@@ -589,8 +589,8 @@ button {
 
 .linked:not(.vertical).path-bar > button:hover:not(:checked):not(:active):not(:only-child):hover {
   transition: 75ms linear;
-  background-color: #37393b;
-  box-shadow: inset 1px 0 rgba(41, 41, 43, 0.5), inset -1px 0 rgba(41, 41, 43, 0.5); }
+  background-color: #18191b;
+  box-shadow: inset 1px 0 rgba(41, 41, 43, 0.5), inset -1px 0 rgba(41, 41, 43, 0.5), 0 2px 3px rgba(0, 0, 0, 0.05); }
 
 .linked:not(.vertical).path-bar > button:hover:not(:checked):not(:active):not(:only-child):first-child:hover {
   box-shadow: inset -1px 0 rgba(41, 41, 43, 0.5); }
@@ -1211,8 +1211,8 @@ headerbar .linked:not(.vertical).path-bar > button + button {
 .primary-toolbar .linked:not(.vertical).path-bar > button:hover:not(:checked):not(:active):not(:only-child):hover,
 headerbar .linked:not(.vertical).path-bar > button:hover:not(:checked):not(:active):not(:only-child):hover {
   transition: 75ms linear;
-  background-color: #37393b;
-  box-shadow: inset 1px 0 rgba(3, 3, 4, 0.37), inset -1px 0 rgba(3, 3, 4, 0.37); }
+  background-color: #18191b;
+  box-shadow: inset 1px 0 rgba(3, 3, 4, 0.37), inset -1px 0 rgba(3, 3, 4, 0.37), 0 2px 3px rgba(0, 0, 0, 0.05); }
 
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover:not(:checked):not(:active):not(:only-child):first-child:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover:not(:checked):not(:active):not(:only-child):first-child:hover,
 .primary-toolbar .linked:not(.vertical).path-bar > button:hover:not(:checked):not(:active):not(:only-child):first-child:hover,
@@ -3277,8 +3277,8 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
 
 .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover:not(:checked):not(:active):not(:only-child):hover {
   transition: 75ms linear;
-  background-color: #37393b;
-  box-shadow: inset 1px 0 rgba(3, 3, 4, 0.37), inset -1px 0 rgba(3, 3, 4, 0.37); }
+  background-color: #18191b;
+  box-shadow: inset 1px 0 rgba(3, 3, 4, 0.37), inset -1px 0 rgba(3, 3, 4, 0.37), 0 2px 3px rgba(0, 0, 0, 0.05); }
 
 .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover:not(:checked):not(:active):not(:only-child):first-child:hover {
   box-shadow: inset -1px 0 rgba(3, 3, 4, 0.37); }

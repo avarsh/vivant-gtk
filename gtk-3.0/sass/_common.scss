@@ -648,7 +648,7 @@ toolbar.inline-toolbar toolbutton {
 }
 
 // special case, because path-bars are bugged
-@mixin pathbar_linking_rules($sep_color:if($variant=='light', transparentize($button_border, 0.2), transparentize($button_border, 0.5))) {
+@mixin pathbar_linking_rules($sep_color:if($variant=='light', transparentize($button_border, 0.15), transparentize($button_border, 0.5))) {
 
   > button + button { border-left-style: none; }
 
@@ -656,9 +656,10 @@ toolbar.inline-toolbar toolbutton {
 
     &:hover {
       transition: 75ms linear;
-      background-color: lighten($bg_color, 5%);
+      background-color: darken($base_color, 2%);
       box-shadow: inset  1px 0 $sep_color,
-                  inset -1px 0 $sep_color;
+                  inset -1px 0 $sep_color,
+                  0 2px 3px transparentize($color: #000000, $amount: 0.95);
     }
     &:first-child:hover { box-shadow: inset -1px 0 $sep_color; }
     &:last-child:hover { box-shadow: inset 1px 0 $sep_color; }
