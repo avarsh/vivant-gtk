@@ -1622,7 +1622,7 @@ menu,
   border: 1px solid #d5d5d7; }
   .csd menu, .csd
   .menu {
-    padding: 4px 0px;
+    padding: 0 0px;
     border-radius: 2px;
     border: none; }
   menu separator,
