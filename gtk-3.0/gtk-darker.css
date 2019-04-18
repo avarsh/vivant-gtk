@@ -1739,24 +1739,16 @@ cursor-handle {
 notebook {
   padding: 0; }
   notebook.frame {
-    /*border: 1px solid $borders_color;*/
-    border: none; }
+    border: 1px solid #d5d5d7; }
     notebook.frame > header {
-      margin: -1px; }
-      notebook.frame > header.top {
-        margin-bottom: 0; }
-      notebook.frame > header.bottom {
-        margin-top: 0; }
-      notebook.frame > header.left {
-        margin-right: 0; }
-      notebook.frame > header.right {
-        margin-left: 0; }
-      notebook.frame > header.top, notebook.frame > header.bottom {
-        padding-left: 0;
-        padding-right: 0; }
-      notebook.frame > header.left, notebook.frame > header.right {
-        padding-top: 0;
-        padding-bottom: 0; }
+      /*margin: -1px;
+      &.top { margin-bottom: 0; }
+      &.bottom { margin-top: 0; }
+      &.left { margin-right: 0; }
+      &.right { margin-left: 0; }
+
+      &.top, &.bottom { padding-left: 0; padding-right: 0; }
+      &.left, &.right { padding-top: 0; padding-bottom: 0; }*/ }
   notebook > stack:not(:only-child) {
     background-color: #fafafa; }
   notebook > header {

@@ -1755,20 +1755,7 @@ notebook {
   padding: 0;
 
   &.frame {
-    /*border: 1px solid $borders_color;*/
-    border: none;
-
-    > header {
-      // ugly hack to hide the borders around the header
-      margin: -1px;
-      &.top { margin-bottom: 0; }
-      &.bottom { margin-top: 0; }
-      &.left { margin-right: 0; }
-      &.right { margin-left: 0; }
-
-      &.top, &.bottom { padding-left: 0; padding-right: 0; }
-      &.left, &.right { padding-top: 0; padding-bottom: 0; }
-    }
+    border: 1px solid $borders_color;
   }
 
   > stack:not(:only-child) { // the :not(:only-child) is for "hidden" notebooks
